@@ -1,110 +1,151 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Elizabeth Marquez - Portfolio</title>
-        
-        <style>
-            #navbar {
-              background-color:; 
-            }
-            body {
-              background-color:black;
-            }
-            #name {
-              border-style:ridge;
-              border-color:(0,255,255);
-              color:pink;
-              text-align:center;
-            }
-              
-              h2 {
-                color:pink; 
-              }
-              
-              p {
-                color:white;
-              }
-            li {
-              display: inline;
-              padding-right: 192px;
-            }
-            a {
-                color:white;
-            }
-            
-            p {
-             text-align:center; 
-            }
-            
-            h2 {
-              text-align:center;
-            }
-            
-            #main {
-            text-align:center;
-            }
-        </style>
-        
-    </head>
-    <body>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Elizabeth's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:#C2C2C2;
+    }
     
-        <div id="navbar">
-             <!--Watch the Khan Academy Links Video before making links-->
-             <!--Put your list of navbar links here -->
-            <ul>
-              <li><a  target="_blank" href="./index.html">Home</a></li>
-              <li><a  target="_blank" href="http://scratchpad.io/gaping-knot-1013">About Me</a></li>
-              <li><a  target="_blank" href="./portfolio.html">Portfolio Info</a></li>
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: #059D8E;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("./img/home/south_sister.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
             </ul>
-             
-              
-            
         </div>
-        
-        <div id="main">
-            <!-- Put all of your main HTML here -->
-            <h1 id="name">Elizabeth Marquez</h1>
-            <img id="mainimg" src="https://33.media.tumblr.com/8768001bb0c908f02528884286e6b349/tumblr_nw1v28PHuY1toc6tto1_500.gif"
-            width="50%">
+        <div class="main-page">
+            <div class="image-container"></div>
             
-      <h2> About Me</h2>
-          <p>
-            My name is Elizabeth Marquez. I am a founding 9th grader
-            at Alpha Cindy Avitia High School. I love One Direction, 
-            and an image of them placed under my name. Besides One Direction,
-            I also like bands like Five Seconds of Summer, or Twenty
-            One Pilots, and many other artists like Halsey or Ed 
-            Sheeran. Besides my love of music, I also have a love of 
-            reading. I love to read any type of genre of books, just
-            like I like any type of genre of music. I am a very
-            indecisive person, and if I had one word to describe
-            myself, it would be <em> paradox.</em> A paradox is a person
-            who self-contradicts themselves. I am currently on the
-            founding girls soccer team at Alpha, and volunteer my 
-            time at events to help out. I am also currently
-            bilingual but plan on learning many more languages
-            since one of my goals are to travel many places
-            and expierence new cultures and places. The two languages
-            I know are English and Spanish. I don't have a specific
-            college in mind, but I do want to become a photographer,
-            travel, and or become a lawyer. I want to do good, and
-            bring justice and fairness. I want to give back to my
-            community and family. I want to make a positive 
-            difference in this world. I want to bring change. I want
-            to change the bad and support the good. <em>But,</em> in
-            order to create change, I should start with myself. I 
-            plan on living on the present, and having my current
-            goal be to getting good grades in high school so I can 
-            graduate and get into the college of my choice. 
-          </p>
-            
-      <h2> </h2>
-          <p>
-          </p>
-            
-            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Elizabeth's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info">My name is Elizabeth Marquez. I am a founding 9th grader at Alpha Cindy Avitia High School. I was born in California and grew up here. I was also a founding student at Alpha Blanca Alvarado Middle School and was CEO of my class in 7th grade. I attented this math and engineering program for girls called Techbridge for around two or three years, and played an instrument for two years. I also have volunteered at many events such as the Stop The Violence Walk which occured in Aug 31, 2015 in California and lasted around five hours. I was also in a dance group for around two years or three years and we entered the talent show and won 2nd place. I graduated 8th grade with a 4.0 which was my proudest academic achievement, and I am currently on the founding girls soccer team here at the Alpha Cindy Avitia High School.
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">Currently and Future Goals</h2>
+                <p class="text-info">As I have mentioned before, I am a founding 9th grader at Alpha Cindy Avitia High School, and I'm on the founding girls soccer team. I also volunteer my free time at many special events. I hope to be the first in my family to graduate high school, and go to college. After college I plan on traveling everywhere I could possibly go to, and be a photographer and expierence new cultures and places. I am currently bilingual but plan on learning many more languages along the way. I plan to get a good job and give back to my community and family. For right now, I'm going to start small. I am going to start with 9th grade and live in the present. sidenote: The image above represents an image of a night sky and a road. The image above represents traveling.
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
         </div>
- 
-    </body>
+    </div>
+    
+    
+
+</body>
 </html>
